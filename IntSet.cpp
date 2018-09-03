@@ -48,20 +48,23 @@ using namespace std;
 
 IntSet::IntSet()
 {
-   cout << "IntSet() is not implemented yet..." << endl;
+  used = 0;
+  data[used];
 }
 
 int IntSet::size() const
 {
-   cout << "size() is not implemented yet..." << endl;
-   return 0; // dummy value returned
+   return used; 
 }
 
 
 bool IntSet::isEmpty() const
 {
-   cout << "isEmpty() is not implemented yet..." << endl;
-   return false; // dummy value returned
+	if(used == 0 || used == NULL)
+	{
+		return true;
+	}
+   return false; 
 }
 
 bool IntSet::contains(int anInt) const
