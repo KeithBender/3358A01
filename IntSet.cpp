@@ -69,9 +69,18 @@ bool IntSet::isEmpty() const
 
 bool IntSet::contains(int anInt) const
 {
+<<<<<<< HEAD
 	for(int i = 0; i < used; i++){
 		if(data[i] == anInt)
 			return true;
+=======
+	for(int i = 0; i < used; i++)
+	{
+		if(anInt == data[i])
+		{
+			return true;
+		}
+>>>>>>> 5d12c7540dcb9d4403d73c9e8c6ea6462920a934
 	}
 	return false;
 }
