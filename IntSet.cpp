@@ -76,7 +76,7 @@ bool IntSet::contains(int anInt) const
 			return true;
 		}
 	}
-	return false;
+	return false;// dummy value returned
 }
 
 bool IntSet::isSubsetOf(const IntSet& otherIntSet) const
