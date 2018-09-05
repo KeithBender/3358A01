@@ -81,8 +81,13 @@ bool IntSet::contains(int anInt) const
 
 bool IntSet::isSubsetOf(const IntSet& otherIntSet) const
 {
-   cout << "isSubsetOf() is not implemented yet..." << endl;
-   return false; // dummy value returned
+	if(isEmpty(IntSet))
+		return true;
+	for(int i = 0; i < used; i++)
+	{
+	
+	}
+	return false;
 }
 
 void IntSet::DumpData(ostream& out) const
